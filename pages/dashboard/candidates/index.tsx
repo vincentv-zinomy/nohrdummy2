@@ -18,7 +18,6 @@ import Badges from "@/components/common/Badges";
 import Link from "next/link";
 import AddCandidateModal from "@/components/onboard/AddCandidateModal";
 import { useRouter } from "next/router";
-import CustomModal from "@/components/common/CustomModal";
 import DeleteModal from "@/components/dashboard/DeleteModal";
 import EditCandidateModal from "@/components/dashboard/candidates/EditCandidateModal";
 

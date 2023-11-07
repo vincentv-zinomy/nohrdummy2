@@ -1,6 +1,6 @@
 import { FormContext } from "@/pages/onboard";
 import React, { useContext, useState } from "react";
-import CustomModal from "../common/CustomModal";
+import AddInterviewerModal from "../dashboard/team/AddInterviewerModal";
 
 const CalenderInterviewersForm = ({}) => {
     const { currentForm, setCurrentForm, formSteps } = useContext(FormContext);
@@ -83,32 +83,8 @@ const CalenderInterviewersForm = ({}) => {
           </div>
         </>
       </form>
-      {/* <AddInterviewerModal open={open} setOpen={setOpen}/> */}
-      <CustomModal
-            action="create"
-            button_content="Add Interviewer"
-            title="Add New Interviewer"
-            open={open}
-            setOpen={setOpen}
-            inputs={[
-              {
-                key: "name",
-                label: "Name",
-                input_type: "text",
-                placeholder: "Interviewer Name",
-                required:true
-              },
-              {
-                key: "email",
-                label: "Email",
-                input_type: "text",
-                placeholder: "you@example.com",
-                required:true
-
-              },
-             
-            ]} 
-          />
+      <AddInterviewerModal open={open} setOpen={setOpen}/>
+  
     </>
   );
 };

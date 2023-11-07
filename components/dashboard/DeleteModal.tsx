@@ -1,6 +1,5 @@
 import { FormEvent, Fragment, useEffect, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import NewCustomSelectInput from "@/components/common/NewCustomSelectInput";
 
 export type InputI = {
   key: string;

@@ -199,3 +199,12 @@ export interface phoneNumberTypes {
   sms_setup_completed: boolean;
   whatsapp_setup_completed: boolean;
 }
+
+export type InputI = {
+  key: string;
+  label: string;
+  input_type: "text" | "text-area" | "number" | "select" | "phone_number";
+  placeholder?: string;
+  options?: {label:string, value:string}[];
+  required?:boolean
+};

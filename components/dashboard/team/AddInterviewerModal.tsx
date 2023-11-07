@@ -80,7 +80,6 @@ export default function AddInterviewerModal({ open, setOpen }: any) {
                             </div>
                         </div>
 
-                        {/* <NewCustomSelectInput/> */}
                         <div className="w-full pt-6  justify-between items-center gap-[59px] inline-flex mt-4">
                             <button className="w-[152px] h-[52px] px-6 py-3.5 rounded-full border border-green-800 justify-center items-center gap-2 flex grow shrink basis-0 text-center text-green-900 text-base font-medium" onClick={()=>setOpen(false)}>
                                  Cancel 
